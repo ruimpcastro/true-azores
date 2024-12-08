@@ -8,7 +8,14 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				'open-sans': ['Open Sans', 'sans-serif'],
+				raleway: ['Raleway', 'sans-serif']
+			},
+			colors: { background: '#D3E9EA', secondary: '#A0A67D', accent: '#FFB347' }
+		}
 	},
 
 	plugins: [typography, forms, containerQueries, aspectRatio]
