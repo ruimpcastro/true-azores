@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: '22'
       - name: Write GitHub SHA to .env file
-        run: echo "PUBLIC_BUILD_VERSION=${{ github.sha }}" >> .env
+        run: echo "PUBLIC_BUILD_VERSION={{ github.sha::0:7 }}" >> .env
 
       - name: Install npm dependencies
         run: npm install
