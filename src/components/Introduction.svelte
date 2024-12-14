@@ -1,10 +1,10 @@
 <script>
-	import profilePicture from '../lib/images/profile-picture.png';
+	import profilePicture from '../lib/images/profile-picture.png?enhanced';
 </script>
 
 <section class="container">
 	<div>
-		<img alt="Profile picture" src={profilePicture} />
+		<enhanced:img class="profile-picture" alt="Profile picture" src={profilePicture} />
 	</div>
 	<div class="introduction">
 		<h3>Nelson Silva</h3>
@@ -32,8 +32,9 @@
 	.introduction {
 		max-width: 35rem;
 	}
-	img {
+	.profile-picture {
 		width: 200px;
+		height: auto;
 		transform: scaleX(-1);
 		border-radius: 50%;
 	}
