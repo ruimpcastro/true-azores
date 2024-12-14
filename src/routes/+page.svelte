@@ -3,7 +3,6 @@
 	import Introduction from '../components/Introduction.svelte';
 	import Pictures from '../components/Pictures.svelte';
 	import Reviews from '../components/Reviews.svelte';
-	import { PUBLIC_BUILD_VERSION } from '$env/static/public';
 </script>
 
 <svelte:head>
@@ -11,7 +10,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div data-version="${PUBLIC_BUILD_VERSION ?? null}">
+<div data-version={__APP_VERSION__}>
 	<HeroImage />
 	<div class="content">
 		<Introduction />
