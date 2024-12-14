@@ -5,7 +5,6 @@
 <section class="container">
 	<div>
 		<img
-			class="profile-picture"
 			alt="Profile picture"
 			src="https://scontent.ffnc2-1.fna.fbcdn.net/v/t1.6435-9/127189277_10158906955959583_2985634516736407316_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=MxNw_Wb79Q4Q7kNvgG3KaAW&_nc_zt=23&_nc_ht=scontent.ffnc2-1.fna&_nc_gid=AZUD6zMw1kkcG0HeYRw_h_5&oh=00_AYDgbvtR_qT1qJ_u6rX-stclHM2wOir3IoaJeXKmKg0y5Q&oe=678540A9"
 		/>
@@ -36,7 +35,7 @@
 	.introduction {
 		max-width: 35rem;
 	}
-	.profile-picture {
+	img {
 		width: 200px;
 		height: auto;
 		transform: scaleX(-1);
