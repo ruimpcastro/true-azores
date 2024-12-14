@@ -7,7 +7,7 @@
 		<img alt="Profile picture" src={profilePicture} />
 	</div>
 	<div class="introduction">
-		<h3>Lorem Ipsum</h3>
+		<h3>Nelson Silva</h3>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae dolorum
 			consequuntur dolores, rem rerum velit? Tenetur hic, ad nostrum ipsum incidunt porro blanditiis
