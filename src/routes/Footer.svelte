@@ -15,7 +15,8 @@
 		instagram: {
 			icon: '📸',
 			type: 'instagram',
-			contact: '@johndoe'
+			contactPrefix: 'https://instagram.com/',
+			contact: 'johndoe'
 		}
 	};
 
@@ -23,7 +24,7 @@
 		return Object.entries(contacts).map(([key, value]) => {
 			return `<li>
                     <span>${value.icon}</span>
-                    <a href="${value.contactPrefix + value.contact}">
+                    <a href="${value.contactPrefix + value.contact} target='_blank'">
                         <span>${value.contact}</span>
                     </a>
                 </li>`;
