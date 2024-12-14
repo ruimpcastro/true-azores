@@ -11,7 +11,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div data-version="${PUBLIC_BUILD_VERSION}">
+<div data-version="${PUBLIC_BUILD_VERSION ?? null}">
 	<HeroImage />
 	<div class="content">
 		<Introduction />
