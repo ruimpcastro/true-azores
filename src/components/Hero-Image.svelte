@@ -1,7 +1,3 @@
-<script>
-	import heroImage from '../lib/images/hero-image-example.png';
-</script>
-
 <section>
 	<div class="hero-image">
 		<h1>True Azores</h1>
@@ -13,7 +9,7 @@
 		margin-bottom: 4rem;
 	}
 	.hero-image {
-		background-image: url('../lib/images/hero-image-example.png');
+		background-image: url('../lib/images/hero-image-example.png?enhanced');
 		height: 50vh;
 		background-position: center;
 		background-repeat: no-repeat;
