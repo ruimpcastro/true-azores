@@ -6,9 +6,6 @@ const gitCommitHash = execSync('git rev-parse --short --verify HEAD').toString()
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	css: {
-		postcss: './postcss.config.js'
-	},
 	define: {
 		__APP_VERSION__: JSON.stringify(gitCommitHash)
 	}
