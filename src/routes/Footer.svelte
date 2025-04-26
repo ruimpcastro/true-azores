@@ -33,9 +33,12 @@
 </script>
 
 <footer class="">
-	<h3 class="">Let's stay in touch!</h3>
+	<h3 class="footer-text">Are you interest?</h3>
 	<div>
-		<h4 class="">Feel free to reach out to me through any of the following methods:</h4>
+		<h4 class="">
+			If you too want to visit the azores and see some of the most beautiful and exquisit places use
+			one of the following methods to reach me
+		</h4>
 		<div>
 			<ul class="contacts">
 				{@html renderContacts().join('')}
@@ -43,3 +46,17 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	.footer-text {
+		background-color: white;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+</style>

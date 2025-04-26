@@ -1,6 +1,13 @@
+<script>
+	import logo from '$lib/images/true-azores-logo.jpg';
+	import heroImage from '$lib/images/hero-image-example.png';
+</script>
+
 <section>
 	<div class="hero-image">
-		<h1>True Azores</h1>
+		<div class="img-container">
+			<img src={logo} alt="True Azores logo" />
+		</div>
 	</div>
 </section>
 
@@ -9,21 +16,31 @@
 		margin-bottom: 4rem;
 	}
 	.hero-image {
-		background-image: url('https://scontent.ffnc2-1.fna.fbcdn.net/v/t39.30808-6/279651795_10160053036014583_8154878168002259442_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=8MeVQb-qfAoQ7kNvgEi1OfO&_nc_zt=23&_nc_ht=scontent.ffnc2-1.fna&_nc_gid=AajtywaufNgCJAA-QReLaCn&oh=00_AYDpeU1hdVqJK8d7DnONCuz56Xow-T3GgFA9QdFCZGnYJw&oe=6763C35A');
+		background-image: url('$lib/images/hero-image-example.png');
 		height: 50vh;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 	}
 
-	h1 {
+	.img-container {
+		width: 164px;
+		height: 164px;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		background-color: white;
+		box-shadow: 0 0 20px rgba(0, 0, 100, 0.8);
+		margin-bottom: 4rem;
+	}
+	img {
+		width: 172px;
+		height: 172px;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: white;
-		font-size: 3rem;
-		text-align: center;
+		left: 5%;
 	}
 </style>

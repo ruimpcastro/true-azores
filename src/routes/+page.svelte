@@ -12,8 +12,8 @@
 
 <div data-version={__APP_VERSION__}>
 	<HeroImage />
+	<Introduction />
 	<div class="content">
-		<Introduction />
 		<Reviews />
 		<Pictures />
 	</div>

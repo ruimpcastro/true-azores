@@ -1,28 +1,45 @@
 <script>
-	import profilePicture from '../lib/images/profile-picture.png';
+	import profilePicture from '$lib/images/profile-picture.png';
 </script>
 
 <section class="container">
-	<div>
-		<img
-			alt="Profile picture"
-			src="https://scontent.ffnc2-1.fna.fbcdn.net/v/t1.6435-9/127189277_10158906955959583_2985634516736407316_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=MxNw_Wb79Q4Q7kNvgG3KaAW&_nc_zt=23&_nc_ht=scontent.ffnc2-1.fna&_nc_gid=AZUD6zMw1kkcG0HeYRw_h_5&oh=00_AYDgbvtR_qT1qJ_u6rX-stclHM2wOir3IoaJeXKmKg0y5Q&oe=678540A9"
-		/>
+	<div class="pre-intro">
+		<h1 class="hero-text">Meet your next Azorean tour guide</h1>
 	</div>
-	<div class="introduction">
-		<h3>Nelson Silva</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae dolorum
-			consequuntur dolores, rem rerum velit? Tenetur hic, ad nostrum ipsum incidunt porro blanditiis
-			culpa architecto iusto error, qui officia.
-		</p>
-	</div>
+	<section class="introduction-container">
+		<div>
+			<img alt="Profile picture" src={profilePicture} />
+		</div>
+		<div class="introduction">
+			<h3>Nelson Silva</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae dolorum
+				consequuntur dolores, rem rerum velit? Tenetur hic, ad nostrum ipsum incidunt porro
+				blanditiis culpa architecto iusto error, qui officia.
+			</p>
+		</div>
+	</section>
 </section>
 
 <style>
 	.container {
 		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		padding: 0 20px;
+	}
+	.pre-intro {
+		display: flex;
+		justify-content: center;
+	}
+	.hero-text {
+		font-size: 3rem;
+		text-align: center;
+	}
+	.introduction-container {
+		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		gap: 2rem;
 
 		@media (max-width: 768px) {
@@ -40,5 +57,6 @@
 		height: auto;
 		transform: scaleX(-1);
 		border-radius: 50%;
+		box-shadow: 0 0 20px rgba(0, 0, 100, 0.8);
 	}
 </style>
