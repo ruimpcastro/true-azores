@@ -14,8 +14,8 @@
 	<HeroImage />
 	<Introduction />
 	<div class="content">
-		<Reviews />
 		<Pictures />
+		<Reviews />
 	</div>
 </div>
 

@@ -33,21 +33,28 @@
 </script>
 
 <footer class="">
-	<h3 class="footer-text">Are you interest?</h3>
-	<div>
-		<h4 class="">
-			If you too want to visit the azores and see some of the most beautiful and exquisit places use
-			one of the following methods to reach me
-		</h4>
+	<div class="footer-container">
+		<h3 class="footer-text">Are you interest?</h3>
 		<div>
-			<ul class="contacts">
-				{@html renderContacts().join('')}
-			</ul>
+			<h4 class="">
+				If you too want to visit the azores and see some of the most beautiful and exquisit places
+				use one of the following methods to reach me
+			</h4>
+			<div>
+				<ul class="contacts">
+					{@html renderContacts().join('')}
+				</ul>
+			</div>
 		</div>
 	</div>
 </footer>
 
 <style>
+	.footer-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
 	.footer-text {
 		background-color: white;
 	}
@@ -58,5 +65,10 @@
 
 	h4 {
 		font-size: 1.5rem;
+		text-align: left;
+	}
+
+	.contacts {
+		justify-content: space-around;
 	}
 </style>
