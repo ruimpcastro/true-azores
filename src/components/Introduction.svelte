@@ -7,7 +7,7 @@
 		<h1 class="hero-text">Meet your next Azorean tour guide</h1>
 	</div>
 	<section class="introduction-container">
-		<div>
+		<div class="picture-container">
 			<img alt="Profile picture" src={profilePicture} />
 		</div>
 		<div class="introduction">
@@ -51,6 +51,12 @@
 	}
 	.introduction {
 		max-width: 35rem;
+	}
+
+	.picture-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	img {
 		width: 200px;

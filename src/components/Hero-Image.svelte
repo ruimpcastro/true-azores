@@ -1,6 +1,5 @@
 <script>
 	import logo from '$lib/images/true-azores-logo.jpg';
-	import heroImage from '$lib/images/hero-image-example.png';
 </script>
 
 <section>
@@ -16,7 +15,7 @@
 		margin-bottom: 4rem;
 	}
 	.hero-image {
-		background-image: url('$lib/images/hero-image-example.png');
+		background-image: url('$lib/images/gallery/sete-cidades/ph1.JPG');
 		height: 50vh;
 		background-position: center;
 		background-repeat: no-repeat;

@@ -15,8 +15,8 @@
 	<Introduction />
 	<div class="content">
 		<Pictures />
-		<Reviews />
 	</div>
+	<Reviews />
 </div>
 
 <style>

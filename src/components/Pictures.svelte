@@ -1,44 +1,127 @@
 <script>
+	import seteCidadesPh0 from '$lib/images/gallery/sete-cidades/ph0.JPG';
+	import seteCidadesPh1 from '$lib/images/gallery/sete-cidades/ph1.JPG';
+	import seteCidadesPh2 from '$lib/images/gallery/sete-cidades/ph2.JPG';
+	import seteCidadesPh3 from '$lib/images/gallery/sete-cidades/ph3.JPG';
+	import seteCidadesPh4 from '$lib/images/gallery/sete-cidades/ph4.JPG';
+	import seteCidadesPh6 from '$lib/images/gallery/sete-cidades/ph6.JPG';
+	import seteCidadesPh7 from '$lib/images/gallery/sete-cidades/ph7.JPG';
+	import seteCidadesPh8 from '$lib/images/gallery/sete-cidades/ph8.JPG';
+
+	import lagoaFogoPh0 from '$lib/images/gallery/lagoa-do-fogo/ph0.JPG';
+	import lagoaFogoPh1 from '$lib/images/gallery/lagoa-do-fogo/ph1.JPG';
+	import lagoaFogoPh2 from '$lib/images/gallery/lagoa-do-fogo/ph2.JPG';
+	import lagoaFogoPh3 from '$lib/images/gallery/lagoa-do-fogo/ph3.JPG';
+
+	import nordestePh0 from '$lib/images/gallery/nordeste/ph0.JPG';
+	import nordestePh1 from '$lib/images/gallery/nordeste/ph1.JPG';
+	import nordestePh2 from '$lib/images/gallery/nordeste/ph2.JPG';
+	import nordestePh3 from '$lib/images/gallery/nordeste/ph3.JPG';
+	import nordestePh4 from '$lib/images/gallery/nordeste/ph4.JPG';
+	import nordestePh5 from '$lib/images/gallery/nordeste/ph5.JPG';
+	import nordestePh6 from '$lib/images/gallery/nordeste/ph6.JPG';
+	import nordestePh7 from '$lib/images/gallery/nordeste/ph7.JPG';
+	import nordestePh8 from '$lib/images/gallery/nordeste/ph8.JPG';
+	import nordestePh9 from '$lib/images/gallery/nordeste/ph9.JPG';
+	import nordestePh10 from '$lib/images/gallery/nordeste/ph10.JPG';
+	import nordestePh11 from '$lib/images/gallery/nordeste/ph11.JPG';
+	import nordestePh12 from '$lib/images/gallery/nordeste/ph12.JPG';
+	import nordestePh13 from '$lib/images/gallery/nordeste/ph13.JPG';
+	import nordestePh14 from '$lib/images/gallery/nordeste/ph14.JPG';
+	import nordestePh15 from '$lib/images/gallery/nordeste/ph15.JPG';
+	import nordestePh16 from '$lib/images/gallery/nordeste/ph16.JPG';
+
+	import furnasPh0 from '$lib/images/gallery/furnas/ph0.JPG';
+	import furnasPh1 from '$lib/images/gallery/furnas/ph1.JPG';
+	import furnasPh2 from '$lib/images/gallery/furnas/ph2.JPG';
+	import furnasPh3 from '$lib/images/gallery/furnas/ph3.JPG';
+	import furnasPh4 from '$lib/images/gallery/furnas/ph4.JPG';
+	import furnasPh5 from '$lib/images/gallery/furnas/ph5.JPG';
+	import furnasPh6 from '$lib/images/gallery/furnas/ph6.JPG';
+	import furnasPh7 from '$lib/images/gallery/furnas/ph7.JPG';
+	import furnasPh8 from '$lib/images/gallery/furnas/ph8.JPG';
+	import furnasPh9 from '$lib/images/gallery/furnas/ph9.JPG';
 </script>
 
 <section>
 	<h3>Recent pictures of visited places</h3>
+	<h4>Sete Cidades</h4>
 	<div class="row">
 		<div class="column">
-			<img src="https://picsum.photos/200/300" style="width:100%; max-height: 215px" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
+			<img src={seteCidadesPh1} style="width:100%" />
+			<img src={seteCidadesPh3} style="width:100%" />
 		</div>
 		<div class="column">
-			<img src="https://picsum.photos/200/300" style="width:100%; max-height: 500px" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
+			<img src={seteCidadesPh6} style="width:100%" />
+			<img src={seteCidadesPh2} style="width:100%" />
 		</div>
 		<div class="column">
-			<img src="https://picsum.photos/200/300" style="width:100%; max-height: 370px" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
+			<img src={seteCidadesPh0} style="width:100%" />
+			<img src={seteCidadesPh4} style="width:100%" />
 		</div>
 		<div class="column">
-			<img src="https://picsum.photos/200/300" style="width:100%; max-height: 470px" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
-			<img src="https://picsum.photos/200/300" style="width:100%" />
+			<img src={seteCidadesPh7} style="width:100%" />
+			<img src={seteCidadesPh8} style="width:100%" />
+		</div>
+	</div>
+	<h4>Lagoa do Fogo</h4>
+	<div class="row">
+		<div class="column">
+			<img src={lagoaFogoPh0} style="width:100%" />
+			<img src={lagoaFogoPh1} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={lagoaFogoPh2} style="width:100%" />
+			<img src={lagoaFogoPh3} style="width:100%" />
+		</div>
+	</div>
+	<h4>Nordeste</h4>
+	<div class="row">
+		<div class="column">
+			<img src={nordestePh5} style="width:100%" />
+			<img src={nordestePh0} style="width:100%" />
+			<img src={nordestePh11} style="width:100%" />
+			<img src={nordestePh3} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={nordestePh8} style="width:100%" />
+			<img src={nordestePh14} style="width:100%" />
+			<img src={nordestePh7} style="width:100%" />
+			<img src={nordestePh6} style="width:100%" />
+			<img src={nordestePh15} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={nordestePh9} style="width:100%" />
+			<img src={nordestePh2} style="width:100%" />
+			<img src={nordestePh10} style="width:100%" />
+			<img src={nordestePh12} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={nordestePh4} style="width:100%" />
+			<img src={nordestePh13} style="width:100%" />
+			<img src={nordestePh16} style="width:100%" />
+			<img src={nordestePh1} style="width:100%" />
+		</div>
+	</div>
+	<h4>Furnas</h4>
+	<div class="row">
+		<div class="column">
+			<img src={furnasPh6} style="width:100%" />
+			<img src={furnasPh1} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={furnasPh3} style="width:100%" />
+			<img src={furnasPh4} style="width:100%" />
+			<img src={furnasPh2} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={furnasPh7} style="width:100%" />
+			<img src={furnasPh8} style="width:100%" />
+		</div>
+		<div class="column">
+			<img src={furnasPh5} style="width:100%" />
+			<img src={furnasPh0} style="width:100%" />
+			<img src={furnasPh9} style="width:100%" />
 		</div>
 	</div>
 </section>
@@ -60,7 +143,7 @@
 		padding: 0 4px;
 	}
 
-	.column img {
+	img {
 		margin-top: 8px;
 		vertical-align: middle;
 		width: 100%;

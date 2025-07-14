@@ -2,7 +2,7 @@
 </script>
 
 <section>
-	<h3>Client Reviews</h3>
+	<h3 class="container-padding">Client Reviews</h3>
 	<div class="cards">
 		<section class="card">
 			<div>
@@ -38,15 +38,37 @@
 </section>
 
 <style>
+	.container-padding {
+		max-width: 1200px;
+		margin: 2rem auto;
+		padding: 0 20px;
+	}
 	.cards {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		display: flex;
 		gap: 1rem;
+		max-width: 1200px;
+		margin: 2rem auto;
+		padding: 0 20px;
 	}
 
 	.card {
 		border-radius: 1.5rem;
 		box-shadow: 0 0 10px rgba(0, 0, 100, 0.5);
 		padding: 1rem;
+		margin: 1rem 0.5rem;
+	}
+
+	@media (max-width: 1024px) {
+		.cards {
+			display: flex;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			gap: 0;
+		}
+		.card {
+			min-width: 362px;
+			padding: 1rem;
+			scroll-snap-align: center;
+		}
 	}
 </style>
