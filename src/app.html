@@ -11,5 +11,16 @@
 
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const elements = document.body.querySelectorAll('*');
+
+				elements.forEach(function (element, index) {
+					element.style.animationDelay = index * 0.05 + 's';
+					element.classList.add('animate-async-reveal');
+				});
+			});
+		</script>
 	</body>
 </html>
