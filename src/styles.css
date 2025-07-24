@@ -1,4 +1,5 @@
 :root {
+	color: #333333;
 	--font-family-montserrat: 'Montserrat', sans-serif;
 	--font-family-open-sans: 'Open Sans', sans-serif;
 	--font-family-raleway: 'Raleway', sans-serif;
@@ -7,6 +8,7 @@
 }
 
 body {
+	background: #f8f8f8;
 	margin: 0;
 }
 
@@ -18,19 +20,4 @@ body {
 
 footer {
 	text-align: center;
-}
-
-.contacts {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	gap: 2rem;
-
-	@media (max-width: 768px) {
-		flex-direction: column;
-	}
-
-	@media (max-width: 1024px) {
-		gap: 1rem;
-	}
 }

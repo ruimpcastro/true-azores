@@ -40,14 +40,14 @@
 <style>
 	.container-padding {
 		max-width: 1200px;
-		margin: 2rem auto;
+		margin: 2rem auto 0;
 		padding: 0 20px;
 	}
 	.cards {
 		display: flex;
 		gap: 1rem;
 		max-width: 1200px;
-		margin: 2rem auto;
+		margin: 0 auto 1rem;
 		padding: 0 20px;
 	}
 

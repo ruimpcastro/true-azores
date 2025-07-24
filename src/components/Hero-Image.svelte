@@ -12,7 +12,7 @@
 
 <style>
 	section {
-		margin-bottom: 4rem;
+		margin-bottom: 1rem;
 	}
 	.hero-image {
 		background-image: url('$lib/images/gallery/sete-cidades/ph1.JPG');
@@ -24,6 +24,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
+		border-bottom-left-radius: 20%;
+		border-bottom-right-radius: 20%;
+		box-shadow: 0 0 10px rgba(0, 0, 100, 0.5);
 	}
 
 	.img-container {

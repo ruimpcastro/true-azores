@@ -148,6 +148,7 @@
 		vertical-align: middle;
 		width: 100%;
 		border-radius: 1.5rem;
+		box-shadow: 0 0 5px rgba(0, 0, 100, 0.5);
 	}
 
 	/* Responsive layout - makes a two column-layout instead of four columns */
