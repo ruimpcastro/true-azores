@@ -66,7 +66,7 @@
 			gap: 0;
 		}
 		.card {
-			min-width: 362px;
+			min-width: 300px;
 			padding: 1rem;
 			scroll-snap-align: center;
 		}
