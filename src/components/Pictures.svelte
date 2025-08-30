@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import seteCidadesPh0 from '$lib/images/gallery/sete-cidades/ph0.JPG';
 	import seteCidadesPh1 from '$lib/images/gallery/sete-cidades/ph1.JPG';
 	import seteCidadesPh2 from '$lib/images/gallery/sete-cidades/ph2.JPG';
@@ -41,87 +42,113 @@
 	import furnasPh7 from '$lib/images/gallery/furnas/ph7.JPG';
 	import furnasPh8 from '$lib/images/gallery/furnas/ph8.JPG';
 	import furnasPh9 from '$lib/images/gallery/furnas/ph9.JPG';
+
+	onMount(() => {
+		const accordions = document.getElementsByClassName('accordion');
+		for (let i = 0; i < accordions.length; i++) {
+			accordions[i].addEventListener('click', function () {
+				this.classList.toggle('active');
+				const panel = this.nextElementSibling;
+				panel.style.display = this.classList.contains('active') ? 'block' : 'none';
+			});
+		}
+	});
 </script>
 
 <section>
 	<h3>Recent pictures of visited places</h3>
-	<h4>Sete Cidades</h4>
-	<div class="row">
-		<div class="column">
-			<img src={seteCidadesPh1} style="width:100%" />
-			<img src={seteCidadesPh3} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={seteCidadesPh6} style="width:100%" />
-			<img src={seteCidadesPh2} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={seteCidadesPh0} style="width:100%" />
-			<img src={seteCidadesPh4} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={seteCidadesPh7} style="width:100%" />
-			<img src={seteCidadesPh8} style="width:100%" />
-		</div>
-	</div>
-	<h4>Lagoa do Fogo</h4>
-	<div class="row">
-		<div class="column">
-			<img src={lagoaFogoPh0} style="width:100%" />
-			<img src={lagoaFogoPh1} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={lagoaFogoPh2} style="width:100%" />
-			<img src={lagoaFogoPh3} style="width:100%" />
+	<button class="accordion"
+		><span>Sete Cidades</span><i class="fa-solid fa-chevron-down"></i></button
+	>
+	<div class="panel">
+		<div class="row">
+			<div class="column">
+				<img src={seteCidadesPh1} style="width:100%" />
+				<img src={seteCidadesPh3} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={seteCidadesPh6} style="width:100%" />
+				<img src={seteCidadesPh2} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={seteCidadesPh0} style="width:100%" />
+				<img src={seteCidadesPh4} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={seteCidadesPh7} style="width:100%" />
+				<img src={seteCidadesPh8} style="width:100%" />
+			</div>
 		</div>
 	</div>
-	<h4>Nordeste</h4>
-	<div class="row">
-		<div class="column">
-			<img src={nordestePh5} style="width:100%" />
-			<img src={nordestePh0} style="width:100%" />
-			<img src={nordestePh11} style="width:100%" />
-			<img src={nordestePh3} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={nordestePh8} style="width:100%" />
-			<img src={nordestePh14} style="width:100%" />
-			<img src={nordestePh7} style="width:100%" />
-			<img src={nordestePh6} style="width:100%" />
-			<img src={nordestePh15} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={nordestePh9} style="width:100%" />
-			<img src={nordestePh2} style="width:100%" />
-			<img src={nordestePh10} style="width:100%" />
-			<img src={nordestePh12} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={nordestePh4} style="width:100%" />
-			<img src={nordestePh13} style="width:100%" />
-			<img src={nordestePh16} style="width:100%" />
-			<img src={nordestePh1} style="width:100%" />
+	<button class="accordion"
+		><span>Lagoa do Fogo</span><i class="fa-solid fa-chevron-down"></i></button
+	>
+	<div class="panel">
+		<div class="row">
+			<div class="column">
+				<img src={lagoaFogoPh0} style="width:100%" />
+				<img src={lagoaFogoPh1} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={lagoaFogoPh2} style="width:100%" />
+				<img src={lagoaFogoPh3} style="width:100%" />
+			</div>
 		</div>
 	</div>
-	<h4>Furnas</h4>
-	<div class="row">
-		<div class="column">
-			<img src={furnasPh6} style="width:100%" />
-			<img src={furnasPh1} style="width:100%" />
+	<button class="accordion"><span>Nordeste</span><i class="fa-solid fa-chevron-down"></i></button>
+	<div class="panel">
+		<div class="row">
+			<div class="column">
+				<img src={nordestePh5} style="width:100%" />
+				<img src={nordestePh0} style="width:100%" />
+				<img src={nordestePh11} style="width:100%" />
+				<img src={nordestePh3} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={nordestePh8} style="width:100%" />
+				<img src={nordestePh14} style="width:100%" />
+				<img src={nordestePh7} style="width:100%" />
+				<img src={nordestePh6} style="width:100%" />
+				<img src={nordestePh15} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={nordestePh9} style="width:100%" />
+				<img src={nordestePh2} style="width:100%" />
+				<img src={nordestePh10} style="width:100%" />
+				<img src={nordestePh12} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={nordestePh4} style="width:100%" />
+				<img src={nordestePh13} style="width:100%" />
+				<img src={nordestePh16} style="width:100%" />
+				<img src={nordestePh1} style="width:100%" />
+			</div>
 		</div>
-		<div class="column">
-			<img src={furnasPh3} style="width:100%" />
-			<img src={furnasPh4} style="width:100%" />
-			<img src={furnasPh2} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={furnasPh7} style="width:100%" />
-			<img src={furnasPh8} style="width:100%" />
-		</div>
-		<div class="column">
-			<img src={furnasPh5} style="width:100%" />
-			<img src={furnasPh0} style="width:100%" />
-			<img src={furnasPh9} style="width:100%" />
+	</div>
+	<button class="accordion">
+		<span>Furnas</span>
+		<i class="fa-solid fa-chevron-down"></i>
+	</button>
+	<div class="panel">
+		<div class="row">
+			<div class="column">
+				<img src={furnasPh6} style="width:100%" />
+				<img src={furnasPh1} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={furnasPh3} style="width:100%" />
+				<img src={furnasPh4} style="width:100%" />
+				<img src={furnasPh2} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={furnasPh7} style="width:100%" />
+				<img src={furnasPh8} style="width:100%" />
+			</div>
+			<div class="column">
+				<img src={furnasPh5} style="width:100%" />
+				<img src={furnasPh0} style="width:100%" />
+				<img src={furnasPh9} style="width:100%" />
+			</div>
 		</div>
 	</div>
 </section>
@@ -167,5 +194,43 @@
 			flex: 100%;
 			max-width: 100%;
 		}
+	}
+
+	.accordion {
+		background-color: transparent;
+		font-size: 1rem;
+		padding: 1rem 1rem;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		border: none;
+		outline: none;
+		box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+		transition: 0.4s;
+		margin-bottom: 8px;
+	}
+
+	:global(.accordion.active) {
+		background-color: rgba(0, 0, 100, 0.05);
+	}
+	:global(.accordion.active i) {
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+		transition: transform 0.4 ease-out;
+	}
+
+	:global(.accordion i) {
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		transition: transform 0.4s ease-out;
+	}
+
+	.panel {
+		display: none;
+		overflow: hidden;
 	}
 </style>
