@@ -4,7 +4,7 @@
 
 <section class="container">
 	<div class="pre-intro">
-		<h1 class="hero-text">Meet your next Azorean tour guide</h1>
+		<h1 class="hero-text">Meet your next São Miguel tour guide</h1>
 	</div>
 	<section class="introduction-container">
 		<div class="picture-container">
@@ -13,9 +13,15 @@
 		<div class="introduction">
 			<h3>Nelson Silva</h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae dolorum
-				consequuntur dolores, rem rerum velit? Tenetur hic, ad nostrum ipsum incidunt porro
-				blanditiis culpa architecto iusto error, qui officia.
+				Born in Portugal, Nelson began his career in hospitality at a young age as a baggage handler
+				in luxury hotels, quickly advancing due to his dedication and attention to detail. He later
+				became a hotel director on cruise ships, managing complex operations and ensuring
+				exceptional passenger experiences for 15 years, traveling the world and gaining invaluable
+				experience working with diverse nationalities and cultures. Driven by a deep love for the
+				Azores, he moved to the island of São Miguel to combine his two passions: the island and
+				tourism. Currently, he is focused on promoting local tourism and creating authentic,
+				high‑quality experiences with professionalism and a commitment to excellence alongside his
+				team.
 			</p>
 		</div>
 	</section>

@@ -4,19 +4,19 @@
 			icon: '<i class="fa-solid fa-envelope fa-xl"></i>',
 			type: 'email',
 			contactPrefix: 'mailto:',
-			contact: 'johndoe@email.com'
+			contact: 'nelson.trueazores@gmail.com'
 		},
 		phone: {
 			icon: '<i class="fa-solid fa-phone fa-xl"></i>',
 			type: 'phone',
 			contactPrefix: 'tel:',
-			contact: '+351911111111'
+			contact: '+351968566840'
 		},
 		instagram: {
 			icon: '<i class="fa-brands fa-instagram fa-xl"></i>',
 			type: 'instagram',
-			contactPrefix: 'https://instagram.com/',
-			contact: 'johndoe'
+			contactPrefix: 'https://instagram.com/true.azores/',
+			contact: 'true.azores'
 		}
 	};
 
@@ -24,7 +24,7 @@
 		return Object.entries(contacts).map(([key, value]) => {
 			return /* HTML */ `<li>
 				<span>${value.icon}</span>
-				<a href="${value.contactPrefix + value.contact} target='_blank'">
+				<a href="${value.contactPrefix + value.contact}" target="_blank">
 					<span>${value.contact}</span>
 				</a>
 			</li>`;
@@ -37,7 +37,7 @@
 		<h3 class="footer-text">Are you interest?</h3>
 		<div class="footer-description">
 			<h4 class="">
-				If you too want to visit the azores and see some of the most beautiful and exquisit places
+				If you too want to visit São Miguel and see some of the most beautiful and exquisite places
 				use one of the following methods to reach me
 			</h4>
 			<div class="contacts-container">

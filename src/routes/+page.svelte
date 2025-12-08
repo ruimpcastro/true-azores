@@ -16,7 +16,7 @@
 	<div class="content">
 		<Pictures />
 	</div>
-	<Reviews />
+	<!-- <Reviews /> -->
 </div>
 
 <style>

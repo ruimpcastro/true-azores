@@ -56,11 +56,15 @@
 </script>
 
 <section>
-	<h3>Recent pictures of visited places</h3>
+	<h3>Tour highlight photos</h3>
 	<button class="accordion"
 		><span>Sete Cidades</span><i class="fa-solid fa-chevron-down"></i></button
 	>
 	<div class="panel">
+		<ul class="panel-description">
+			<li>Half day starting at: 50€</li>
+			<li>Full day with Lagoa do Fogo and lunch included starting at: 80€</li>
+		</ul>
 		<div class="row">
 			<div class="column">
 				<img src={seteCidadesPh1} style="width:100%" />
@@ -84,6 +88,10 @@
 		><span>Lagoa do Fogo</span><i class="fa-solid fa-chevron-down"></i></button
 	>
 	<div class="panel">
+		<ul class="panel-description">
+			<li>Half day starting at: 50€</li>
+			<li>Full day with Sete Cidades and lunch included starting at: 80€</li>
+		</ul>
 		<div class="row">
 			<div class="column">
 				<img src={lagoaFogoPh0} style="width:100%" />
@@ -97,6 +105,7 @@
 	</div>
 	<button class="accordion"><span>Nordeste</span><i class="fa-solid fa-chevron-down"></i></button>
 	<div class="panel">
+		<span>Full day starting at: 80€</span>
 		<div class="row">
 			<div class="column">
 				<img src={nordestePh5} style="width:100%" />
@@ -130,6 +139,7 @@
 		<i class="fa-solid fa-chevron-down"></i>
 	</button>
 	<div class="panel">
+		<span>Full day starting at: 80€</span>
 		<div class="row">
 			<div class="column">
 				<img src={furnasPh6} style="width:100%" />
@@ -151,6 +161,9 @@
 			</div>
 		</div>
 	</div>
+	<button class="accordion">
+		<span>Private custom made tours: Price under consultation</span>
+	</button>
 </section>
 
 <style>
@@ -232,5 +245,10 @@
 	.panel {
 		display: none;
 		overflow: hidden;
+	}
+
+	.panel-description {
+		display: flex;
+		flex-direction: column;
 	}
 </style>
