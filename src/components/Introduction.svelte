@@ -14,14 +14,18 @@
 			<h3>Nelson Silva</h3>
 			<p>
 				Born in Portugal, Nelson began his career in hospitality at a young age as a baggage handler
-				in luxury hotels, quickly advancing due to his dedication and attention to detail. He later
-				became a hotel director on cruise ships, managing complex operations and ensuring
+				in luxury hotels, quickly advancing due to his dedication and attention to detail.
+			</p>
+			<p>
+				He later became a hotel director on cruise ships, managing complex operations and ensuring
 				exceptional passenger experiences for 15 years, traveling the world and gaining invaluable
 				experience working with diverse nationalities and cultures. Driven by a deep love for the
 				Azores, he moved to the island of São Miguel to combine his two passions: the island and
-				tourism. Currently, he is focused on promoting local tourism and creating authentic,
-				high‑quality experiences with professionalism and a commitment to excellence alongside his
-				team.
+				tourism.
+			</p>
+			<p>
+				Currently, he is focused on promoting local tourism and creating authentic, high‑quality
+				experiences with professionalism and a commitment to excellence alongside his team.
 			</p>
 		</div>
 	</section>

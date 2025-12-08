@@ -250,5 +250,7 @@
 	.panel-description {
 		display: flex;
 		flex-direction: column;
+		gap: 1rem;
+		font-weight: 600;
 	}
 </style>
