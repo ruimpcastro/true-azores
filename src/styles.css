@@ -34,10 +34,26 @@ footer {
 	}
 }
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 /* Class to apply the animation */
 .animate-async-reveal {
 	animation-name: fadeInSlideUp;
 	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.animate-fab {
+	animation-name: fadeIn;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }

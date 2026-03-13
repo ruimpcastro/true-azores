@@ -45,8 +45,10 @@
 
 	onMount(() => {
 		const accordions = document.getElementsByClassName('accordion');
+
 		for (let i = 0; i < accordions.length; i++) {
 			accordions[i].addEventListener('click', function () {
+				// Toggle the clicked one
 				this.classList.toggle('active');
 				const panel = this.nextElementSibling;
 				panel.style.display = this.classList.contains('active') ? 'block' : 'none';
@@ -161,9 +163,9 @@
 			</div>
 		</div>
 	</div>
-	<button class="accordion">
+	<div class="under-consultation">
 		<span>Private custom made tours: Price under consultation</span>
-	</button>
+	</div>
 </section>
 
 <style>
@@ -223,6 +225,15 @@
 		box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 		transition: 0.4s;
 		margin-bottom: 8px;
+	}
+
+	.under-consultation {
+		font-size: 1rem;
+		padding: 1rem 1rem;
+		align-items: center;
+		margin-bottom: 16px;
+		font-weight: 700;
+		transition: 0.4s;
 	}
 
 	:global(.accordion.active) {

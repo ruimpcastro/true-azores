@@ -67,6 +67,7 @@
 	}
 	.footer-description {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 2rem;
@@ -76,20 +77,19 @@
 	.contacts-container {
 		width: 100%;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-around;
 	}
 
 	.contacts {
 		display: flex;
 		justify-content: space-around;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: flex-start;
 		gap: 2rem;
 	}
 
 	@media screen and (max-width: 800px) {
 		.footer-description {
-			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			max-width: 512px;
@@ -106,7 +106,7 @@
 		}
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 600px) {
 		.contacts {
 			flex-direction: column;
 		}

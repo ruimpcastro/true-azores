@@ -1,4 +1,5 @@
 <script>
+	import Fab from '../components/Fab.svelte';
 	import Footer from './Footer.svelte';
 	import '../styles.css';
 
@@ -15,9 +16,6 @@
 	<main>
 		{@render children()}
 	</main>
-
 	<Footer></Footer>
 </div>
-
-<style>
-</style>
+<Fab />

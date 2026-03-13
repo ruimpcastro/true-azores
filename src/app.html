@@ -17,7 +17,15 @@
 				const elements = document.body.querySelectorAll('*');
 
 				elements.forEach(function (element, index) {
-					element.style.animationDelay = index * 0.05 + 's';
+					if (element.classList.contains('fab-button') || element.classList.contains('fab-icon')) {
+						element.classList.add('animate-fab');
+						element.style.animationDelay = '0.1s'; // Apply a small, fixed delay
+
+						return; // Skip the generic logic for the FAB
+					}
+
+					const delay = index > 5 ? 5 : index;
+					element.style.animationDelay = delay * 0.05 + 's';
 					element.classList.add('animate-async-reveal');
 				});
 			});
