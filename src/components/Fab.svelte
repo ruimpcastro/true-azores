@@ -8,7 +8,8 @@
 </script>
 
 <button on:click={scrollToTop} class="fab-button" aria-label="Scroll to top">
-	<i class="fa-solid fa-arrow-up fa-xl fab-icon" style="color: currentColor;" aria-hidden="true"></i>
+	<i class="fa-solid fa-arrow-up fa-xl fab-icon" style="color: currentColor;" aria-hidden="true"
+	></i>
 </button>
 
 <style>
@@ -17,6 +18,10 @@
 		bottom: 2rem;
 		right: 2rem;
 		z-index: 1;
+	}
+
+	.fab-button:hover {
+		background-color: #f2f2f2;
 	}
 
 	button {
@@ -30,5 +35,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: background-color 0.3s ease;
 	}
 </style>

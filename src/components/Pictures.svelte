@@ -174,7 +174,7 @@
 		display: flex;
 		-ms-flex-wrap: wrap; /* IE10 */
 		flex-wrap: wrap;
-		padding: 0 4px;
+		padding: 1rem 4px;
 	}
 
 	/* Create four equal columns that sits next to each other */
@@ -225,6 +225,12 @@
 		box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 		transition: 0.4s;
 		margin-bottom: 8px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.accordion:hover {
+		background-color: #f2f2f2;
 	}
 
 	.under-consultation {
@@ -237,7 +243,7 @@
 	}
 
 	:global(.accordion.active) {
-		background-color: rgba(0, 0, 100, 0.05);
+		background-color: #e3e3e3;
 	}
 	:global(.accordion.active i) {
 		-webkit-transform: rotate(180deg);
@@ -263,5 +269,7 @@
 		flex-direction: column;
 		gap: 1rem;
 		font-weight: 600;
+		padding: 0 1rem;
+		margin: 0
 	}
 </style>
