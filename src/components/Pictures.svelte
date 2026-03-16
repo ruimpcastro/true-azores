@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import seteCidadesPh0 from '$lib/images/gallery/sete-cidades/ph0.JPG';
 	import seteCidadesPh1 from '$lib/images/gallery/sete-cidades/ph1.JPG';
 	import seteCidadesPh2 from '$lib/images/gallery/sete-cidades/ph2.JPG';
@@ -43,27 +42,22 @@
 	import furnasPh8 from '$lib/images/gallery/furnas/ph8.JPG';
 	import furnasPh9 from '$lib/images/gallery/furnas/ph9.JPG';
 
-	onMount(() => {
-		const accordions = document.getElementsByClassName('accordion');
-
-		for (let i = 0; i < accordions.length; i++) {
-			accordions[i].addEventListener('click', function () {
-				// Toggle the clicked one
-				this.classList.toggle('active');
-				const panel = this.nextElementSibling;
-				panel.style.display = this.classList.contains('active') ? 'block' : 'none';
-			});
-		}
-	});
+	let openStates = {
+		seteCidades: false,
+		lagoaDoFogo: false,
+		nordeste: false,
+		furnas: false
+	};
 </script>
 
 <section>
 	<h3>Tour highlight photos</h3>
-	<button class="accordion"
-		><span>Sete Cidades</span><i class="fa-solid fa-chevron-down"></i></button
-	>
-	<div class="panel">
-		<ul class="panel-description">
+	<div class="accordion-item">
+		<button class="accordion" class:active={openStates.seteCidades} on:click={() => (openStates.seteCidades = !openStates.seteCidades)}>
+			<span>Sete Cidades</span><i class="fa-solid fa-chevron-down"></i>
+		</button>
+		<div class="panel" style:display={openStates.seteCidades ? 'block' : 'none'}>
+			<ul class="panel-description">
 			<li>Half day starting at: 50€</li>
 			<li>Full day with Lagoa do Fogo and lunch included starting at: 80€</li>
 		</ul>
@@ -86,11 +80,13 @@
 			</div>
 		</div>
 	</div>
-	<button class="accordion"
-		><span>Lagoa do Fogo</span><i class="fa-solid fa-chevron-down"></i></button
-	>
-	<div class="panel">
-		<ul class="panel-description">
+	</div>
+	<div class="accordion-item">
+		<button class="accordion" class:active={openStates.lagoaDoFogo} on:click={() => (openStates.lagoaDoFogo = !openStates.lagoaDoFogo)}>
+			<span>Lagoa do Fogo</span><i class="fa-solid fa-chevron-down"></i>
+		</button>
+		<div class="panel" style:display={openStates.lagoaDoFogo ? 'block' : 'none'}>
+			<ul class="panel-description">
 			<li>Half day starting at: 50€</li>
 			<li>Full day with Sete Cidades and lunch included starting at: 80€</li>
 		</ul>
@@ -105,9 +101,13 @@
 			</div>
 		</div>
 	</div>
-	<button class="accordion"><span>Nordeste</span><i class="fa-solid fa-chevron-down"></i></button>
-	<div class="panel">
-		<span>Full day starting at: 80€</span>
+	</div>
+	<div class="accordion-item">
+		<button class="accordion" class:active={openStates.nordeste} on:click={() => (openStates.nordeste = !openStates.nordeste)}>
+			<span>Nordeste</span><i class="fa-solid fa-chevron-down"></i>
+		</button>
+		<div class="panel" style:display={openStates.nordeste ? 'block' : 'none'}>
+			<span>Full day starting at: 80€</span>
 		<div class="row">
 			<div class="column">
 				<img src={nordestePh5} style="width:100%" />
@@ -136,12 +136,14 @@
 			</div>
 		</div>
 	</div>
-	<button class="accordion">
-		<span>Furnas</span>
-		<i class="fa-solid fa-chevron-down"></i>
-	</button>
-	<div class="panel">
-		<span>Full day starting at: 80€</span>
+	</div>
+	<div class="accordion-item">
+		<button class="accordion" class:active={openStates.furnas} on:click={() => (openStates.furnas = !openStates.furnas)}>
+			<span>Furnas</span>
+			<i class="fa-solid fa-chevron-down"></i>
+		</button>
+		<div class="panel" style:display={openStates.furnas ? 'block' : 'none'}>
+			<span>Full day starting at: 80€</span>
 		<div class="row">
 			<div class="column">
 				<img src={furnasPh6} style="width:100%" />
@@ -162,6 +164,7 @@
 				<img src={furnasPh9} style="width:100%" />
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="under-consultation">
 		<span>Private custom made tours: Price under consultation</span>
@@ -242,20 +245,17 @@
 		transition: 0.4s;
 	}
 
-	:global(.accordion.active) {
+	.accordion.active {
+		position: sticky;
+		top: 0;
+		z-index: 1;
 		background-color: #e3e3e3;
 	}
-	:global(.accordion.active i) {
-		-webkit-transform: rotate(180deg);
-		-ms-transform: rotate(180deg);
+	.accordion.active i {
 		transform: rotate(180deg);
-		transition: transform 0.4 ease-out;
 	}
 
-	:global(.accordion i) {
-		-webkit-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
+	.accordion i {
 		transition: transform 0.4s ease-out;
 	}
 
